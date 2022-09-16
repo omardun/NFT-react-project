@@ -10,13 +10,13 @@ export default function CategorySelector() {
                 {title}
             </button>
             <ul className="dropdown-menu">
-                {categories.map((category) => {
+                {categories.map((category) => 
                     (
                     <li key={category}>
-                        <a href="#" className="dropdown-item pointer">{category}</a>
+                        <a href="#" className="dropdown-item pointer" >{category}</a>
                     </li>
                     )
-                })}
+                )}
             </ul>
         </div>
     )
