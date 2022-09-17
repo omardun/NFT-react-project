@@ -4,8 +4,8 @@ import ProductButton from "./ProductButton";
 export default function Product({ product = [] }) {
     const nav = useNavigate();
     return (
-        <div className="col">
-            <div className="card h-100" id="product">
+        <div className="col ">
+            <div className="card h-100 " id="product">
                 <img
                     src={require(`../../images/${product.id}.jpg`)}
                     alt=""
@@ -20,7 +20,7 @@ export default function Product({ product = [] }) {
                         <span className="pointer" onClick={() => nav(`/single/${product.id}`)}>{product.price}</span>
                     </div>
                 </div>
-                <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div className="card-footer p-4 pt-0 border-top-0 bg-red">
                     <ProductButton />
                 </div>
             </div>

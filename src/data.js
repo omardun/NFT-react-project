@@ -18,7 +18,9 @@ const data = [
     { "id": 17, "price": 218, "name": "Vintage Warm Beanie", "category": "Hats", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
     { "id": 18, "price": 353, "name": "Extreme Winter Comfy Socks", "category": "Socks", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
     { "id": 19, "price": 109, "name": "Men's Dry Outlander Socks", "category": "Socks", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
-    { "id": 20, "price": 470, "name": "Maroon Warm Women's Socks", "category": "Socks", "description" : "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" }
+    { "id": 20, "price": 470, "name": "Maroon Warm Women's Socks", "category": "Socks", "description" : "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
+    { "id": 21, "price": 41, "name": "Maroon Warm Women's Socks", "category": "Socks", "description" : "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" }
+
 ]
 
 export default data
