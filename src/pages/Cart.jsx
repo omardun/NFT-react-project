@@ -2,6 +2,7 @@ import NoContent from "../components/extra/NoContent"
 import data from "../data"
 import CartItem from "../components/Cart/CartItem"
 import CartNumbers from "../components/Cart/CartNumbers"
+import CartBuyButton from "../components/Cart/CartBuyButton"
 
 export default function Cart() {
     const items = data.slice(0, 3)
@@ -20,7 +21,7 @@ export default function Cart() {
                         {items.map((i) => <CartItem key={i.id} item={i}/>)}
                     </ul>
                     <CartNumbers />
-                    {/* <CartButton /> */}
+                    <CartBuyButton />
                 </div>
             </div>
         </div>
