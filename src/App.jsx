@@ -6,6 +6,7 @@ import Cart from "./pages/Cart";
 
 
 export default function App() {
+  
   return (
       <div className="wrapper bg-dark text-white">
         <Navbar title="React Shop"/>

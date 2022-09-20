@@ -1,13 +1,14 @@
+import { useSelector } from "react-redux"
+
+
 export default function CategorySelector() {
 
-    const title = "All"
-    const categories = ['all', 'jackets', 'scarves', 'gloves', 'hats', 'socks']
-
+    const {categories, selectedCategory} = useSelector(state => state.products)
 
     return (
         <div className="dropdown mb-3 mb-lg-0">
             <button className="btn btn-outline-success text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
-                {title}
+                {selectedCategory}All
             </button>
             <ul className="dropdown-menu">
                 {categories.map((category) => 
