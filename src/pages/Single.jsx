@@ -1,15 +1,16 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom"
 import ProductButton from "../components/products/ProductButton"
-import Line from "../components/extra/Line";
 import Products from "../components/products/Products"
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { actions as productsActions } from "../global/slices/productsSlice";
 
 export default function Single() {
     const { id } = useParams()
-    // const product = data.find((product) => product.id === +id)
     const {single, singleSimilarProducts} = useSelector((state) => state.products)
+    const dispatch = useDispatch()
 
+    useEffect(() => {dispatch(productsActions.setSingle(id))}, [id])
     return (
         <div>
             <div id="single" className="row justify-content-center align-items-center text-white mx-auto">
