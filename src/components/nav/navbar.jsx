@@ -8,7 +8,7 @@ export default function Navbar({title}) {
     const nav = useNavigate()
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top border-bottom">
             <div className="container-fluid px-md-5">
                 <span onClick={() => nav("/")} id="name" className="navbar-brand fw-bold pointer">
                     {title}

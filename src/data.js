@@ -1,8 +1,8 @@
 const data = [
-    { "id": 1, "price": 486, "name": "Modest Warm Coat", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
-    { "id": 2, "price": 81, "name": "Comfy Winter Jacket", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
-    { "id": 3, "price": 119, "name": "Mens Thick Jacket", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
-    { "id": 4, "price": 226, "name": "Teal Parka", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
+    { "id": 1, "price": 486, "name": "Alexander McQueen Skull Folded Umbrella Black", "category": "Accessories", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
+    { "id": 2, "price": 81, "name": "Alexander McQueen Skull Umbrella Black/Silver", "category": "Accessories", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
+    { "id": 3, "price": 119, "name": "Balenciaga Umbrella Black/White", "category": "Accessories", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
+    { "id": 4, "price": 226, "name": "Burberry Vintage Check Umbrella Archive Beige", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
     { "id": 5, "price": 302, "name": "Women's Gray Coat", "category": "Jackets", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
     { "id": 6, "price": 287, "name": "Minimalist Golden Scarf", "category": "Scarfs", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },
     { "id": 7, "price": 212, "name": "Blue Luxury Scarf", "category": "Scarfs", "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart" },

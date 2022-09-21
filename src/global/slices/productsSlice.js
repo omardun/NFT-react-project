@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import data from "../../data"
-import {uniq} from "lodash"
+import {uniq, sortBy} from "lodash"
+import {stringSimilarity as getSimScore} from "string-similarity-js";
 import { loremIpsum } from "lorem-ipsum";
 
 const DEFAULT_CATEGORY = "All"
@@ -18,11 +19,13 @@ export  const {actions, reducer} = createSlice({
         searchTerm: ""
     },
     reducers: {
-        addProduct (state, {payload}) {
-            state.products.push(payload)
-        },
-        clearProducts(state) {
-            state.products = [];
+        setSearchTerm(state, {payload:searchTerm}) {
+            state.searchTerm = searchTerm
+            state.productsFromSearch.forEach((p) => {
+                p.simScore = getSimScore(`${p.name} ${p.category}`, searchTerm)
+                console.log(p.simScore);
+            })
+            state.productsFromSearch = sortBy(state.productsFromSearch, "simScore").reverse()
         }
     }
 })

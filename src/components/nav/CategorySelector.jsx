@@ -7,8 +7,8 @@ export default function CategorySelector() {
 
     return (
         <div className="dropdown mb-3 mb-lg-0">
-            <button className="btn btn-outline-success text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
-                {selectedCategory}All
+            <button className="btn btn-primary text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                {selectedCategory}Products
             </button>
             <ul className="dropdown-menu">
                 {categories.map((category) => 
