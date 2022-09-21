@@ -30,7 +30,7 @@ export default function Single() {
                     <p className="lead">
                         {single.description}
                     </p>
-                    <ProductButton />
+                    <ProductButton product={single}/>
                 </div>
             </div>
             <br></br>
