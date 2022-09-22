@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux"
+
 export default function CartNumbers () {
 
-const cartNumbers = {subtotal: 119.00, shipping : 2.00, tax : 11.90, total : 132.90}
+const {cartNumbers} = useSelector(state => state.cart)    
 
 const rows = [
     {title: "Subtotal", price : cartNumbers.subtotal},
