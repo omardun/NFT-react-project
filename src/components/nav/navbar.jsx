@@ -1,12 +1,13 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import CategorySelector from "./CategorySelector"
 import SearchBar from "./SearchBar"
 import CartButton from "./CartButton"
-
-export default function Navbar({title}) {
+import Condition from "../extra/Condition"
+export default function Navbar({ title = "" }) {
 
     const nav = useNavigate()
-
+    let { pathname } = useLocation()
+    // console.log(pathname);
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top border-bottom">
             <div className="container-fluid px-md-5">
@@ -17,11 +18,17 @@ export default function Navbar({title}) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <CategorySelector />
-                    <SearchBar />
+
+                    <Condition test={(pathname === "/")} success={
+                        <>
+                            <CategorySelector />
+                            <SearchBar />
+                        </>
+                    } />
                     <CartButton />
+
                 </div>
-                
+
             </div>
         </nav>
     )

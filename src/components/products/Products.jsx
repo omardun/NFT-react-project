@@ -1,6 +1,5 @@
 import Product from "./Product"
 
-
 export default function Products({ products=[] }) {
     return (
         <div className="px-lg-5 text-dark">

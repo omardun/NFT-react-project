@@ -4,13 +4,15 @@ import ProductButton from "../components/products/ProductButton"
 import Products from "../components/products/Products"
 import { useDispatch, useSelector } from "react-redux";
 import { actions as productsActions } from "../global/slices/productsSlice";
+import Price from "../components/extra/Price"
+
 
 export default function Single() {
     const { id } = useParams()
-    const {single, singleSimilarProducts} = useSelector((state) => state.products)
+    const { single, singleSimilarProducts } = useSelector((state) => state.products)
     const dispatch = useDispatch()
 
-    useEffect(() => {dispatch(productsActions.setSingle(id))}, [id])
+    useEffect(() => { dispatch(productsActions.setSingle(id)) }, [id, dispatch])
     return (
         <div>
             <div id="single" className="row justify-content-center align-items-center text-white mx-auto">
@@ -25,17 +27,17 @@ export default function Single() {
                         {single.name}
                     </h2>
                     <div className="fs-5 mb-2">
-                        {single.price}
+                        <Price value={single.price} />
                     </div>
                     <p className="lead">
-                        {single.description}
+                        {single.description.substring(0, 100)}
                     </p>
-                    <ProductButton product={single}/>
+                    <ProductButton product={single} />
                 </div>
             </div>
             <br></br>
             <h2 className="text-white my-4 text-center">Similar Products</h2>
-            <Products products={singleSimilarProducts}/>
+            <Products products={singleSimilarProducts} />
         </div>
     )
 }

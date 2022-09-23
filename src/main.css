@@ -14,6 +14,7 @@
 .dropdown button::after {
     display: none;
 }
+
 #overlay {
     padding: 100px;
     padding-top: 200px;
@@ -43,6 +44,7 @@
     max-height: 500px;
     object-fit: contain;
 }
+
 #single button {
     width: 180px;
 }
@@ -58,6 +60,7 @@
     object-fit: contain;
 }
 
+
 #cart .description {
     max-height: 50px;
     overflow: hidden;
@@ -66,5 +69,3 @@
 #cart-numbers li:last-child span:last-child {
     font-weight: bolder;
 }
-
-

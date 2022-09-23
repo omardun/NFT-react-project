@@ -1,23 +1,26 @@
 import { useNavigate } from "react-router-dom";
 import ProductButton from "./ProductButton";
-
+import Price from "../extra/Price"
 export default function Product({ product = [] }) {
     const nav = useNavigate();
+    const {id, name, price} = product
     return (
         <div className="col ">
             <div className="card h-100 " id="product">
                 <img
-                    src={require(`../../images/${product.id}.jpg`)}
-                    alt=""
+                    src={require(`../../images/${id}.jpg`)}
+                    alt={product.name}
                     className="card-img-top pointer"
-                    onClick={() => nav(`/single/${product.id}`)}
-                    title={product.name}
+                    onClick={() => nav(`/single/${id}`)}
+                    title={name}
 
                 />
                 <div className="card-body pd-4">
                     <div className="text-center">
-                        <h6 onClick={() => nav(`/single/${product.id}`)} className="fw-bolder pointer" >{product.name}</h6>
-                        <span className="pointer" onClick={() => nav(`/single/${product.id}`)}>{product.price}</span>
+                        <h6 onClick={() => nav(`/single/${id}`)} className="fw-bolder pointer" >{name}</h6>
+                        <span >
+                            <Price value={price} />
+                        </span>
                     </div>
                 </div>
                 <div className="card-footer p-4 pt-0 border-top-0 bg-red">
