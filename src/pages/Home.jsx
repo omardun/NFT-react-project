@@ -5,8 +5,13 @@ export default function Home() {
 
     const { productsFromSearch } = useSelector((state) => state.products)
     return (
+
         <>
-            <h1>NFT STORE REACT</h1>
+        <img src={require("../images/mario.gif")}
+                        alt=""
+                        id="mario"
+                        className="card-img-top"
+                    />
             <Products products={productsFromSearch} />
         </>
     )

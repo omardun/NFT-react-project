@@ -1,3 +1,4 @@
+
 .wrapper {
     min-height: 100vh;
 }
@@ -68,4 +69,21 @@
 
 #cart-numbers li:last-child span:last-child {
     font-weight: bolder;
+}
+
+#name {
+    font-family: 'Nabla', cursive;
+}
+#mario {
+    width: 200px;
+    position: relative;
+    animation-name: mariorun;
+    animation-duration: 12s;
+    animation-iteration-count: 100;
+    animation-timing-function: linear;
+}
+
+@keyframes mariorun {
+    0%{left:0%}
+    100%{left:88%}
 }

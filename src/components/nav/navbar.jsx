@@ -3,15 +3,16 @@ import CategorySelector from "./CategorySelector"
 import SearchBar from "./SearchBar"
 import CartButton from "./CartButton"
 import Condition from "../extra/Condition"
+
 export default function Navbar({ title = "" }) {
 
     const nav = useNavigate()
     let { pathname } = useLocation()
     // console.log(pathname);
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top border-bottom">
+        <nav className="navbar navbar-expand-lg navbar  border-bottom">
             <div className="container-fluid px-md-5">
-                <span onClick={() => nav("/")} id="name" className="navbar-brand fw-bold pointer">
+                <span onClick={() => nav("/")} id="name" className="text-light navbar-brand fw-bold pointer fs-1 ">
                     {title}
                 </span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">

@@ -15,9 +15,12 @@ export default function App() {
   useEffect(() => { window.scrollTo(0, 0) }, [location, dispatch])
 
   return (
+
     <div className="wrapper bg-dark text-white">
-      <Navbar title="React Shop" />
-      <div className="container mt-5 py-5 px-3 px-md-5"></div>
+
+      <Navbar title="Dev Gaming" />
+      <div className="container mt-0 py-2 px-3 px-md-5">
+      </div>
       <Routes>
         <Route path="/" element={< Home />} />
         <Route path="/single/:id" element={<Single />} />
