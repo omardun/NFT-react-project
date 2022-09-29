@@ -11,7 +11,7 @@ export default function Cart() {
     <Condition
       test={items.length === 0}
       success={
-        <NoContent text="Nothing in your cart" btnText="browse products" />
+        <NoContent text="No Items in your Cart" btnText="View Products" />
       }
       fail={
         <div className="row py-3">

@@ -11,13 +11,14 @@ export default function ProductButton({ product }) {
     return (
         <Condition test={isInCart} success={
             <button
+                id="remove"
                 onClick={() => dispatch(cartActions.removeFromCart(product))}
                 className="btn btn-outline-danger d-block w-100">
-                remove
+                X
             </button>
 
         } fail={
-            <button onClick={() => dispatch(cartActions.addToCart(product))}
+            <button  onClick={() => dispatch(cartActions.addToCart(product))}
                 className="btn btn-outline-success d-block w-100">
                 add cart
             </button>

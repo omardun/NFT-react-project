@@ -18,7 +18,7 @@ export default function App() {
 
     <div className="wrapper bg-dark text-white">
 
-      <Navbar title="Dev Gaming" />
+      <Navbar title="React Gaming" />
       <div className="container mt-0 py-2 px-3 px-md-5">
       </div>
       <Routes>

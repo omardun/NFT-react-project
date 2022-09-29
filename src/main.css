@@ -87,3 +87,14 @@
     0%{left:0%}
     100%{left:88%}
 }
+
+#remove {
+    font-family: 'Kalam', cursive;
+font-family: 'Permanent Marker', cursive;
+}
+#cartButton {
+    background-color: rgba(165, 165, 165, 0.282);
+}
+#cartNumber {
+    background-color: transparent;
+}

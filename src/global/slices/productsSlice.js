@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 import data from "../../data"
 import { uniq, sortBy } from "lodash"
 import { stringSimilarity as getSimScore } from "string-similarity-js";
-import { loremIpsum } from "lorem-ipsum";
+// import { loremIpsum } from "lorem-ipsum";
 
 const DEFAULT_CATEGORY = "All"
-data.forEach((d) => d.description = loremIpsum()) //dont have to use lorem ipsum
+// data.forEach((d) => d.description = loremIpsum()) //dont have to use lorem ipsum
 
 
 export const { actions, reducer } = createSlice({

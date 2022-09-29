@@ -3,7 +3,7 @@ import ProductButton from "./ProductButton";
 import Price from "../extra/Price"
 export default function Product({ product = [] }) {
     const nav = useNavigate();
-    const {id, name, price} = product
+    const {id, name, date, price} = product
     return (
         <div className="col ">
             <div className="card h-100 " id="product">
@@ -18,6 +18,7 @@ export default function Product({ product = [] }) {
                 <div className="card-body pd-4">
                     <div className="text-center">
                         <h6 onClick={() => nav(`/single/${id}`)} className="fw-bolder pointer" >{name}</h6>
+                        <h6>{date}</h6>
                         <span >
                             <Price value={price} />
                         </span>
