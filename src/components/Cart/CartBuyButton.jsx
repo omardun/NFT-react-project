@@ -5,7 +5,7 @@ export default function CartBuyButton({ title = "Buy Now" }) {
     const buy = () => {
         // console.log('buying now');
         if (window.confirm("Would you like to place your order?")) {
-            alert("Order Placed Successfully! Will be delivered in 999 days")
+            alert("Order Placed Successfully!")
             nav("/")
             window.location.reload()
         }
