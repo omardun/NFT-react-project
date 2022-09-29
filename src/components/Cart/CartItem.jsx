@@ -10,7 +10,11 @@ export default function CartItems({ item = {} }) {
     return (
         <li className="list-group-item">
             <div className="my-0 d-flex justify-content-between align-items-center">
-                <span className="fw-bolder fs-6 me-auto">{item.name}(<Price value={item.price} />)</span>
+                <span className="fw-bolder fs-6 me-auto">
+                <h5 id="cartTitle">{item.name}</h5>
+                <h6 id="date" >{item.date}</h6>
+                <h5 id="cartPrice"><Price value={item.price} /></h5>
+                </span>
                 <div className="btn-group">
                     <button onClick={() => incrementQuantity(-1)} className="btn border">-</button>
                     <button className="btn btn-dark border" disabled>{item.quantity}</button>

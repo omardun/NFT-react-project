@@ -18,9 +18,9 @@ export default function ProductButton({ product }) {
             </button>
 
         } fail={
-            <button  onClick={() => dispatch(cartActions.addToCart(product))}
+            <button id="add" onClick={() => dispatch(cartActions.addToCart(product))}
                 className="btn btn-outline-success d-block w-100">
-                add cart
+                +
             </button>
         } />
     )

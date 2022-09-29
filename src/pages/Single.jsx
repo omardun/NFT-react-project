@@ -23,14 +23,15 @@ export default function Single() {
                     />
                 </div>
                 <div className="col-md-6 text-center text-md-start">
-                    <h2 className="fs-1 fw-bold">
+                    <h2 id="title" className="fs-1 fw-bold">
                         {single.name}
                     </h2>
-                    <div className="fs-5 mb-2">
+                    <h5 id="date">{single.date}</h5>
+                    <div id="price" className="fs-5 mb-2">
                         <Price value={single.price} />
                     </div>
                     <p className="lead">
-                        {single.description.substring(0, 100)}
+                        {single.description.substring(0, 250)}
                     </p>
                     <ProductButton product={single} />
                 </div>

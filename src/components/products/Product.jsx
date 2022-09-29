@@ -5,7 +5,7 @@ export default function Product({ product = [] }) {
     const nav = useNavigate();
     const {id, name, date, price} = product
     return (
-        <div className="col ">
+        <div className="col">
             <div className="card h-100 " id="product">
                 <img
                     src={require(`../../images/${id}.jpg`)}
@@ -18,8 +18,8 @@ export default function Product({ product = [] }) {
                 <div className="card-body pd-4">
                     <div className="text-center">
                         <h6 onClick={() => nav(`/single/${id}`)} className="fw-bolder pointer" >{name}</h6>
-                        <h6>{date}</h6>
-                        <span >
+                        <h6 id="date">{date}</h6>
+                        <span id="homePrice" >
                             <Price value={price} />
                         </span>
                     </div>

@@ -4,9 +4,12 @@ import CartNumbers from "../components/Cart/CartNumbers";
 import CartBuyButton from "../components/Cart/CartBuyButton";
 import { useSelector } from "react-redux";
 import Condition from "../components/extra/Condition";
+import { useNavigate } from "react-router-dom"
 
 export default function Cart() {
   const { items } = useSelector((state) => state.cart);
+  const nav = useNavigate()
+
   return (
     <Condition
       test={items.length === 0}
@@ -20,9 +23,12 @@ export default function Cart() {
               id="cart"
               className="p-3 bg-white text-dark my-3 my-md-0 rounded"
             >
-              <h4 className=" mb-3 px-1">cart</h4>
+              <button onClick={() => nav("/")} className=" mb-3 px-3 bi bi-house-door pointer btn btn-primary">
+              
+              </button>
 
               <ul className="list-group mb-3 cart-list">
+                
                 {items.map((i) => (
                   <CartItem key={i.id} item={i} />
                 ))}
