@@ -23,12 +23,12 @@ export default function Cart() {
               id="cart"
               className="p-3 bg-white text-dark my-3 my-md-0 rounded"
             >
-              <button onClick={() => nav("/")} className=" mb-3 px-3 bi bi-house-door pointer btn btn-primary">
-              
+              <button id="homeButtonCart" onClick={() => nav("/")} className=" mb-3 px-3 bi bi-house-door pointer btn btn-primary ">
+
               </button>
 
               <ul className="list-group mb-3 cart-list">
-                
+
                 {items.map((i) => (
                   <CartItem key={i.id} item={i} />
                 ))}

@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
 import { actions as productsActions} from "../../global/slices/productsSlice";
-import { actions as cartActions} from "../../global/slices/cartSlice";
 
 export default function SearchBar() {
 

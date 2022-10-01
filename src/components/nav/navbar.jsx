@@ -3,12 +3,13 @@ import CategorySelector from "./CategorySelector"
 import SearchBar from "./SearchBar"
 import CartButton from "./CartButton"
 import Condition from "../extra/Condition"
+import data from "../../data"
 
 export default function Navbar({ title = "" }) {
 
     const nav = useNavigate()
     let { pathname } = useLocation()
-    // console.log(pathname);
+    const id = data.id
     return (
         <nav className="navbar navbar-expand-lg navbar  border-bottom">
             <div className="container-fluid px-md-5">
@@ -29,7 +30,6 @@ export default function Navbar({ title = "" }) {
                     <CartButton />
 
                 </div>
-
             </div>
         </nav>
     )
